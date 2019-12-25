@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  githubPat: 'b6b2919f3f47424dae0cbe6f09fdc6faa9617761',
+  githubPat: 'ffd9e2a42589de8b4add6a387f78a45a626c14fe',
   baseUrl: 'https://api.github.com/',
   repoOwner: 'oleg-starostin-mobidev',
   project: 'crossroads-test'
