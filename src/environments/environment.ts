@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  githubPat: 'd9eea6b6cf252432bb9e477d9d8375e8fd229948',
+  baseUrl: 'https://api.github.com/',
+  repoOwner: 'oleg-starostin-mobidev',
+  project: 'crossroads-test'
 };
 
 /*

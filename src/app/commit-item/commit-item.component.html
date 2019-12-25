@@ -1,0 +1,8 @@
+<div class="list-group-item list-group-item-action flex-column align-items-start">
+  <h5 class="mb-1">{{commit.message}}</h5>
+  <div class="mb-1">Commit <a href="{{commit.htmlUrl}}" target="_blank">#{{commit.sha}}</a></div>
+  <div class="d-flex w-100 justify-content-between">
+    <small>{{commit.committer.name}} ({{commit.committer.email}})</small>
+    <small>{{commit.committer.date | date: 'short'}}</small>
+  </div>
+</div>
