@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  githubPat: '8ed76b67d1e8ec8c28d4dbcd3ec9114b486dcfe9',
+  githubPat: process.env.PERSONAL_ACCESS_TOKEN,
   baseUrl: 'https://api.github.com/',
   repoOwner: 'oleg-starostin-mobidev',
   project: 'crossroads-test'
