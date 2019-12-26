@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {CommitItem} from "./commit-item";
+import { CommitItem } from './commit-item';
 
 @Component({
   selector: 'app-commit-item',

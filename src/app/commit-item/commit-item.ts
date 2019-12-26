@@ -1,4 +1,10 @@
-class Author {
+interface Author {
+    name: string;
+    email: string;
+    date: string;
+}
+
+interface Committer {
     name: string;
     email: string;
     date: string;
@@ -6,7 +12,7 @@ class Author {
 
 export class CommitItem {
     author: Author;
-    committer: Author;
+    committer: Committer;
     message: string;
     url: string;
     htmlUrl: string;

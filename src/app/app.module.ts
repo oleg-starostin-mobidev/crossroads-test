@@ -7,13 +7,15 @@ import { CommitsListComponent } from './commits-list/commits-list.component';
 import { CommitItemComponent } from './commit-item/commit-item.component';
 
 import {GithubService} from "./core/github.service";
-import { httpInterceptorProviders } from './http-interceptors'
+import { httpInterceptorProviders } from './http-interceptors';
+import { HeaderComponent } from './header/header.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     CommitsListComponent,
-    CommitItemComponent
+    CommitItemComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
