@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from "rxjs";
 import { environment } from '../../environments/environment';
-import { CommitItem } from "../components/commit-item/commit-item";
+import { CommitItem } from '../commits/commit-item/commit-item';
 
 @Injectable({
     providedIn: 'root'

@@ -1,11 +1,12 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 
+import { HeaderComponent } from './header/header.component';
 import { GithubService } from './github.service';
 
 @NgModule({
     imports: [],
-    exports: [],
-    declarations: [],
+    exports: [HeaderComponent],
+    declarations: [HeaderComponent],
     providers: [GithubService]
 })
 
