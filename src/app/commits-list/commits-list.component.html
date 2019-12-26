@@ -1,3 +1,4 @@
 <div class="list-group">
+  <app-loader *ngIf="isLoading"></app-loader>
   <app-commit-item *ngFor="let commit of commits" [commit]="commit"></app-commit-item>
 </div>

@@ -8,14 +8,23 @@ import { CommitItem } from "../commit-item/commit-item";
     providedIn: 'root'
 })
 export class GithubService {
-    private state = new BehaviorSubject<CommitItem[]>([]);
+    private commitsSubject = new BehaviorSubject<CommitItem[]>([]);
+    private isLoadingSubject = new BehaviorSubject<boolean>(false);
+
+    get isLoading() {
+        return this.isLoadingSubject.getValue()
+    }
+
+    set isLoading(state: boolean) {
+        this.isLoadingSubject.next(state);
+    }
 
     get commits() {
-        return this.state.getValue()
+        return this.commitsSubject.getValue()
     }
 
     set commits(newCommits: CommitItem[]) {
-        this.state.next(newCommits);
+        this.commitsSubject.next(newCommits);
     }
 
     constructor(private http: HttpClient) {
@@ -23,7 +32,10 @@ export class GithubService {
 
     getCommits(): void {
         const url = `repos/${environment.repoOwner}/${environment.project}/commits`;
+        this.isLoading = true;
+        this.commits = [];
         this.http.get(url).subscribe((response: CommitItem[]) => {
+            this.isLoading = false;
             this.commits = response.map(item => new CommitItem(item));
         });
     }

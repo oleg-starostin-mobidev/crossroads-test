@@ -13,6 +13,10 @@ export class CommitsListComponent implements OnInit {
     this.githubService.getCommits();
   }
 
+  get isLoading () {
+    return this.githubService.isLoading;
+  }
+
   get commits() {
       return this.githubService.commits;
   }
