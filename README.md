@@ -2,7 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
 
-# .env file
+# Install dependencies
+
+Run `npm install` to install all app dependencies
+
+# Create .env file
 
 In order to run or build the project, you need to create .env file in the root directory and copy all env variables from `.env.example` file, then assign to each variable the required value.
 
