@@ -4,7 +4,7 @@ import { CommitsComponent } from './commits.component';
 
 const commitsRoutes: Routes = [
     {
-        path: '',
+        path: 'commits',
         component: CommitsComponent
     }
 ];

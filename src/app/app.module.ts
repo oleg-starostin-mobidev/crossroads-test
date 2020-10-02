@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { CommitsModule } from './commits/commits.module'
+import { GrapesModule } from "./grapes/grapes.module";
 
 import { AppComponent } from './app.component';
 
@@ -19,7 +20,8 @@ import { httpInterceptorProviders } from './http-interceptors';
     HttpClientModule,
     CoreModule,
     AppRoutingModule,
-    CommitsModule
+    CommitsModule,
+    GrapesModule
   ],
   providers: [
     httpInterceptorProviders
